@@ -1,1 +1,0 @@
-# hamm_solutions-website
