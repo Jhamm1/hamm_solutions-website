@@ -13,7 +13,7 @@ import Works from "../components/common/Works";
 import Team from "../components/versionOne/Team";
 // import Testimonial from "../components/versionOne/Testimonial";
 // import Faq from "../components/common/FAQ";
-import Pricing from "../components/versionOne/Pricing";
+//import Pricing from "../components/versionOne/Pricing";
 import Partners from "../components/common/Partners";
 import Subscribe from "../components/common/Subscribe";
 import Footer from "../components/common/Footer";
@@ -50,7 +50,7 @@ class HomeOne extends Component {
                 {/* Faq: src/components/common/FAQ
                 <Faq /> */}
                 {/* Pricing: src/components/versionOne/Pricing */}
-                <Pricing />
+                {/* <Pricing /> */}
                 {/* Partners: src/components/common/Partners */}
                 <Partners />
                 {/* Subscribe: src/components/common/Subscribe */}

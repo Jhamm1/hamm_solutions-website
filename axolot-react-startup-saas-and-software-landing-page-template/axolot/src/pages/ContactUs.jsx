@@ -330,9 +330,9 @@ ContactUS.propTypes = {
 };
 //Default Props
 ContactUS.defaultProps = {
-    sectionName: "CONTACT AXOLOT",
+    sectionName: "CONTACT HAMM SOLUTIONS",
 
-    phoneTitle: "Phone / Fax",
+    phoneTitle: "Phone",
     phoneNoOne: "(+021) 245522455",
     phoneNoTwo: "(+021) 245522456",
     emailTitle: "E-mail",

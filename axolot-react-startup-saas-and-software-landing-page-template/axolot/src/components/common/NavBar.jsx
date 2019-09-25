@@ -175,7 +175,7 @@ class NavBar extends Component {
                                             FAQ
                                         </Link> */}
 
-                                        <Link
+                                        {/* <Link
                                             activeClass="active"
                                             to="pricing"
                                             spy={true}
@@ -186,7 +186,7 @@ class NavBar extends Component {
                                             onClick={this.closeNavbar}
                                         >
                                             Pricing
-                                        </Link>
+                                        </Link> */}
                                     </React.Fragment>
                                 ) : (
                                     //Contact or Other Page Navbar Start
@@ -226,13 +226,13 @@ class NavBar extends Component {
                                         >
                                             FAQ
                                         </NavLink>
-                                        <NavLink
+                                        {/* <NavLink
                                             className="nav-link"
                                             to="/"
                                             activeClassName=""
                                         >
                                             Pricing
-                                        </NavLink>
+                                        </NavLink> */}
                                     </React.Fragment>
                                     //Contact or Other Page Navbar End
                                 )}

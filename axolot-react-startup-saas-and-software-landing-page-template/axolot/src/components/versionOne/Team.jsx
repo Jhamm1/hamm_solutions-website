@@ -103,7 +103,7 @@ Team.defaultProps = {
     sectionName: "Team",
     sectionTitle: "Our Team Members",
     sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Meet the crew.",
 
     teamsData: [
         {

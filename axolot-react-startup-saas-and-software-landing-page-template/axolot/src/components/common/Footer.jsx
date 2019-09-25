@@ -254,7 +254,7 @@ Footer.propTypes = {
 //Default Props
 Footer.defaultProps = {
     siteDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. sed do eiusmod tempor incididunt ut, tempor incididunt ut.",
+        "Success, in our eyes, is based on value delivered by the software.",
     btnText: "Read More",
     btnLink: "#",
 
@@ -285,7 +285,7 @@ Footer.defaultProps = {
     ],
 
     contactInfoTitle: "Contact Info",
-    contactInfoText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    contactInfoText: "General enquiries: developer@hammsolutions.co.uk",
     address: "Telecom House, 125-135 Preston Rd, Brighton BN1 6AF",
     phone: "020 3372 5064",
     email: "info@hammsolutions.co.uk",
