@@ -2,7 +2,7 @@
     "name": "react-axolot",
     "version": "0.1.0",
     "private": true,
-    "homepage": "/tf-jsx-demo/axolot/",
+    "homepage": "/",
     "dependencies": {
         "animate.css": "^3.7.0",
         "axios": "^0.18.0",
