@@ -1,0 +1,23 @@
+{
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-hammsolutions-staging-153446-authRole",
+            "UnauthRoleArn": "arn:aws:iam::386407096109:role/amplify-hammsolutions-staging-153446-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::386407096109:role/amplify-hammsolutions-staging-153446-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-hammsolutions-staging-153446-deployment",
+            "UnauthRoleName": "amplify-hammsolutions-staging-153446-unauthRole",
+            "StackName": "amplify-hammsolutions-staging-153446",
+            "StackId": "arn:aws:cloudformation:us-east-1:386407096109:stack/amplify-hammsolutions-staging-153446/587622f0-6f77-11ea-a3f7-0aac80a39b9b",
+            "AmplifyAppId": "d2lx3jvzbfyz1w"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2lx3jvzbfyz1w",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
