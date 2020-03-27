@@ -25,7 +25,7 @@ class ContactUS extends Component {
             // message: "",
             // successMsg: ""
             
-                "firstName": "Jerome",
+                "firstName": "Dylan",
                 "lastName": "Hamm",
                 "message": "Test",
                 "email": "julianhamm1@gmail.com",
@@ -50,6 +50,7 @@ class ContactUS extends Component {
                     successMsg: "We received your submission"
                 });
                 document.getElementById("contactForm").reset();
+                console.log(response);
             })
             .catch(function(error) {});
     };
