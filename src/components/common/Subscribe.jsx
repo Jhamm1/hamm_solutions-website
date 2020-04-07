@@ -55,7 +55,7 @@ class Subscribe extends Component {
                                 <div className="newsletter">
                                     <h4>
                                         Subscribe for the latest
-                                        <span> Hamm solutions</span> Updates
+                                        <span> Hamm solution</span> Updates
                                     </h4>
                                     <MailchimpSubscribe
                                         url={url}

@@ -113,19 +113,6 @@ class NavBar extends Component {
                                     <React.Fragment>
                                         <Link
                                             activeClass="active"
-                                            to="features"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-70}
-                                            duration={800}
-                                            className="nav-link"
-                                            onClick={this.closeNavbar}
-                                        >
-                                            Features
-                                        </Link>
-
-                                        <Link
-                                            activeClass="active"
                                             to="about"
                                             spy={true}
                                             smooth={true}
@@ -134,10 +121,23 @@ class NavBar extends Component {
                                             className="nav-link"
                                             onClick={this.closeNavbar}
                                         >
-                                            About
+                                            About us
                                         </Link>
 
                                         <Link
+                                            activeClass="active"
+                                            to="features"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration={800}
+                                            className="nav-link"
+                                            onClick={this.closeNavbar}
+                                        >
+                                            Services
+                                        </Link>
+
+                                        {/* <Link
                                             activeClass="active"
                                             to="services"
                                             spy={true}
@@ -148,7 +148,7 @@ class NavBar extends Component {
                                             onClick={this.closeNavbar}
                                         >
                                             Services
-                                        </Link>
+                                        </Link> */}
 
                                         <Link
                                             activeClass="active"
@@ -160,7 +160,7 @@ class NavBar extends Component {
                                             className="nav-link"
                                             onClick={this.closeNavbar}
                                         >
-                                            Team
+                                            Director
                                         </Link>
                                         {/* <Link
                                             activeClass="active"

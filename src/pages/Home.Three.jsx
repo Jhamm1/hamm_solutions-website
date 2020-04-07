@@ -6,7 +6,7 @@ import Showcase from "../components/versionThree/Showcase";
 import Features from "../components/versionThree/Features";
 import Works from "../components/common/Works";
 import About from "../components/common/About";
-import Services from "../components/versionThree/Services";
+// import Services from "../components/versionThree/Services";
 import JointClient from "../components/common/JoinClient";
 import FunFactCOunter from "../components/versionThree/FunFactCounter";
 import Vision from "../components/common/Vision";
@@ -36,7 +36,7 @@ class HomeThree extends Component {
                 {/* About: src/components/common/About */}
                 <About />
                 {/* Services: src/components/versionThree/Services */}
-                <Services />
+                {/* <Services /> */}
                 {/* JointClient: src/components/common/JoinClient */}
                 <JointClient />
                 {/* FunFactCOunter: src/components/versionThree/FunFactCounter */}

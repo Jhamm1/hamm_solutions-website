@@ -5,7 +5,7 @@ import NavBar from "../components/common/NavBar";
 import Showcase from "../components/versionOne/Showcase";
 import Features from "../components/versionOne/Features";
 import About from "../components/common/About";
-import Services from "../components/versionOne/Services";
+// import Services from "../components/versionOne/Services";
 import Vision from "../components/common/Vision";
 import FunFactCOunter from "../components/versionOne/FunFactCounter";
 import JointClient from "../components/common/JoinClient";
@@ -30,11 +30,11 @@ class HomeOne extends Component {
                 {/* Showcase: src/components/versionOne/Showcase */}
                 <Showcase />
                 {/* Features: src/components/versionOne/Features */}
-                <Features />
-                {/* About: src/components/common/About */}
                 <About />
+                {/* About: src/components/common/About */}
+                <Features />
                 {/* Services: src/components/versionOne/Services */}
-                <Services />
+                {/* <Services /> */}
                 {/* Vision: src/components/common/Vision */}
                 <Vision />
                 {/* FunFactCOunter: src/components/versionOne/FunFactCounter */}

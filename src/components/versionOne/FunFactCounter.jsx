@@ -16,7 +16,7 @@ class FunFactCOunter extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="funfacts-area">
+                {/* <section className="funfacts-area">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-3 col-md-3">
@@ -125,7 +125,7 @@ class FunFactCOunter extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </React.Fragment>
         );
     }
