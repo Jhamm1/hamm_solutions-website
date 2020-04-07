@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/build
 /.pnp
 .pnp.js
 .vscode
@@ -13,7 +12,6 @@ package-lock.json
 /coverage
 
 # production
-/build
 
 # misc
 .DS_Store
@@ -32,7 +30,6 @@ amplify/.config/local-*
 amplify/mock-data
 amplify/backend/amplify-meta.json
 amplify/backend/awscloudformation
-build/
 dist/
 node_modules/
 aws-exports.js
