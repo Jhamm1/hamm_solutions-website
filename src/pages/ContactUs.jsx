@@ -25,12 +25,8 @@ class ContactUS extends Component {
             // message: "",
             // successMsg: ""
             
-                "firstName": "Dylan",
-                "lastName": "Hamm",
-                "message": "Test",
-                "email": "julianhamm1@gmail.com",
-                "number": "12345678910",
-                "service": "contact service"
+            "name": "morpheus",
+            "job": "leader"
             
         };
     }
@@ -38,7 +34,7 @@ class ContactUS extends Component {
     handleForm = e => {
         let that = this;
         axios
-            .post("/contacts", this.state, {
+            .post("/api/users", this.state, {
                 headers: { Accept: "application/json",
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Headers": "Content-Type",

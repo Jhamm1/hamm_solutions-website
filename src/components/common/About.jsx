@@ -122,11 +122,12 @@ class About extends Component {
                     <div className="container">
                         <div className="section-title">
                             <span>About Us</span>
-                            <h3>We provide best service for you customers</h3>
+                            <h3>We provide best service to our clients</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
+                            Hamm Solutions Consulting was formed in 2018 and 
+                            has worked with public and private sector organisations 
+                            in delivering large scale, complex software solutions and 
+                            the associated business strategies for successful delivery.
                             </p>
                         </div>
 
