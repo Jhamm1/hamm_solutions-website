@@ -29,12 +29,15 @@ app.post('/api/contact', async(req, res) => {
     // var testBody = { "service": "test" };
     // res.status(200).json(testBody);
 
+    console.log("****************************");
     console.log(req.body);
+    console.log("****************************");
 
     axios.post('https://reqres.in/api/users', req.body)
         // axios.post('http://localhost:3300/nn', req.body)
         .then(function(response) {
-            console.log(response);
+
+            console.log(response.data);
             res.status(200).json(response.data);
         })
         .catch(function(error) {

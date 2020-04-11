@@ -18,16 +18,15 @@ class ContactUS extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // name: "",
-            // email: "",
-            // number: "",
-            // subject: "",
-            // message: "",
-            // successMsg: ""
+            name: "",
+            email: "",
+            number: "",
+            subject: "",
+            message: "",
+            successMsg: ""
             
-            "name": "Julian",
-            "job": "Hamm solutions"
-            
+            // "name": "Julian",
+            // "job": "Hamm solutions"
         };
     }
 
