@@ -60,23 +60,6 @@ class Footer extends Component {
 
                                         <li>
                                             {this.props.pageName === "home" ? (
-                                                <a href="#features">
-                                                    <i className="icofont-double-right" />
-                                                    Features
-                                                </a>
-                                            ) : (
-                                                <NavLink
-                                                    to="/"
-                                                    activeClassName=""
-                                                >
-                                                    <i className="icofont-double-right" />
-                                                    Features
-                                                </NavLink>
-                                            )}
-                                        </li>
-
-                                        <li>
-                                            {this.props.pageName === "home" ? (
                                                 <a className="" href="#about">
                                                     <i className="icofont-double-right" />
                                                     About
@@ -94,10 +77,7 @@ class Footer extends Component {
 
                                         <li>
                                             {this.props.pageName === "home" ? (
-                                                <a
-                                                    className=""
-                                                    href="#services"
-                                                >
+                                                <a href="#features">
                                                     <i className="icofont-double-right" />
                                                     Services
                                                 </a>
@@ -263,10 +243,6 @@ Footer.defaultProps = {
     supportTitle: "Support",
     supportsLinks: [
         {
-            Name: "Career",
-            Link: "#"
-        },
-        {
             Name: "Support",
             Link: "#"
         },
@@ -280,7 +256,7 @@ Footer.defaultProps = {
         },
         {
             Name: "Contact",
-            Link: "#"
+            Link: "/contact"
         }
     ],
 

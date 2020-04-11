@@ -76,11 +76,13 @@ class Team extends Component {
                                         items: 3
                                     },
                                     1200: {
-                                        items: 4
+                                        items: 2
                                     }
                                 }}
                             >
-                                {teamData}
+                                {/* {teamData} */}
+                                **********
+                                <img src="smiley.gif" />
                             </OwlCarousel>
                         </div>
                     </div>
@@ -100,52 +102,52 @@ Team.propTypes = {
 
 //Default Props
 Team.defaultProps = {
-    sectionName: "Team",
+    sectionName: "Company Director",
     sectionTitle: "Our Team Members",
     sectionDescription:
         "Meet the crew.",
 
     teamsData: [
-        {
-            fbLink: "",
-            twitterLink: "#",
-            behanceLink: "#",
-            name: "John Doe",
-            designation: "Web Developer",
-            image: require("../../assets/img/team-1.jpg")
-        },
-        {
-            fbLink: "#",
-            twitterLink: "#",
-            behanceLink: "",
-            name: "John Smith",
-            designation: "Web Developer",
-            image: require("../../assets/img/team-2.jpg")
-        },
-        {
-            fbLink: "#",
-            twitterLink: "",
-            behanceLink: "#",
-            name: "David Warner",
-            designation: "Web Developer",
-            image: require("../../assets/img/team-3.jpg")
-        },
-        {
-            fbLink: "#",
-            twitterLink: "#",
-            behanceLink: "#",
-            name: "Steven Smith",
-            designation: "Web Developer",
-            image: require("../../assets/img/team-4.jpg")
-        },
-        {
-            fbLink: "#",
-            twitterLink: "#",
-            behanceLink: "#",
-            name: "David Walker",
-            designation: "Web Developer",
-            image: require("../../assets/img/team-5.jpg")
-        }
+        // {
+        //     fbLink: "",
+        //     twitterLink: "#",
+        //     behanceLink: "#",
+        //     name: "John Doe",
+        //     designation: "Web Developer",
+        //     image: require("../../assets/img/team-1.jpg")
+        // },
+        // {
+        //     fbLink: "#",
+        //     twitterLink: "#",
+        //     behanceLink: "",
+        //     name: "John Smith",
+        //     designation: "Web Developer",
+        //     image: require("../../assets/img/team-2.jpg")
+        // },
+        // {
+        //     fbLink: "#",
+        //     twitterLink: "",
+        //     behanceLink: "#",
+        //     name: "David Warner",
+        //     designation: "Web Developer",
+        //     image: require("../../assets/img/team-3.jpg")
+        // },
+        // {
+        //     fbLink: "#",
+        //     twitterLink: "#",
+        //     behanceLink: "#",
+        //     name: "Steven Smith",
+        //     designation: "Web Developer",
+        //     image: require("../../assets/img/team-4.jpg")
+        // },
+        // {
+        //     fbLink: "#",
+        //     twitterLink: "#",
+        //     behanceLink: "#",
+        //     name: "David Walker",
+        //     designation: "Web Developer",
+        //     image: require("../../assets/img/team-5.jpg")
+        // }
     ]
 };
 

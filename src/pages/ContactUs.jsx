@@ -25,8 +25,8 @@ class ContactUS extends Component {
             // message: "",
             // successMsg: ""
             
-            "name": "morpheus",
-            "job": "leader"
+            "name": "Julian",
+            "job": "Hamm solutions"
             
         };
     }
@@ -34,7 +34,7 @@ class ContactUS extends Component {
     handleForm = e => {
         let that = this;
         axios
-            .post("/api/users", this.state, {
+            .post("/api/contact", this.state, {
                 headers: { Accept: "application/json",
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Headers": "Content-Type",
@@ -349,9 +349,9 @@ ContactUS.defaultProps = {
 
     contactTitle: "Get in Touch..",
     contactDescriptionsOne:
-        "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra dictum.",
+        "Contact us using the details below or fill in this form and a member of our team will be in touch soon. We also would welcome to discuss new opportunities with you.",
     contactDescriptionsTwo:
-        "Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue, eget commodo magna lobortis."
+        "***************"
 };
 
 export default ContactUS;

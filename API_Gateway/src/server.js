@@ -2,20 +2,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
 import path from 'path';
+import axios from 'axios';
 
-[{
-    name: 'learn-react',
-    upvotes: 0,
-    comments: [],
-}, {
-    name: 'learn-node',
-    upvotes: 0,
-    comments: [],
-}, {
-    name: 'my-thoughts-on-resumes',
-    upvotes: 0,
-    comments: [],
-}, ]
+const ERROR_MSG = require("./constants/errors");
 
 const app = express();
 
@@ -37,56 +26,44 @@ const withDB = async(operations, res) => {
 
 
 app.get('/api/contact', async(req, res) => {
-    // withDB(async(db) => {
-    //     const articleName = req.params.name;
+    // var testBody = { "service": "test" };
+    // res.status(200).json(testBody);
 
-    //     const articleInfo = await db.collection('articles').findOne({ name: articleName })
-    //     res.status(200).json(articleInfo);
-    // }, res);
-    var testBody = { "service": "test" };
-    res.status(200).json(testBody);
+    console.log(req.body);
+
+    axios.post('https://reqres.in/api/users', req.body)
+        // axios.post('http://localhost:3300/nn', req.body)
+        .then(function(response) {
+            console.log(response);
+            res.status(200).json(response.data);
+        })
+        .catch(function(error) {
+            console.log(error);
+
+            const error_res = { code: ERROR_MSG.ERRORS.SERVICE_NO_RUNNING, message: error.message };
+            res.status(400).json(error_res);
+        });
 })
 
-app.get('/api/articles/:name', async(req, res) => {
-    withDB(async(db) => {
-        const articleName = req.params.name;
 
-        const articleInfo = await db.collection('articles').findOne({ name: articleName })
-        res.status(200).json(articleInfo);
-    }, res);
-})
+// endpoint to call the outbound communication service
+app.post('/api/outboundcommunication', (req, res) => {
 
-app.post('/api/articles/:name/upvote', async(req, res) => {
-    withDB(async(db) => {
-        const articleName = req.params.name;
+    console.log(req.body);
 
-        const articleInfo = await db.collection('articles').findOne({ name: articleName });
-        await db.collection('articles').updateOne({ name: articleName }, {
-            '$set': {
-                upvotes: articleInfo.upvotes + 1,
-            },
+    axios.post('https://reqres.in/api/users', req.body)
+        // axios.post('http://localhost:3300/nn', req.body)
+        .then(function(response) {
+            console.log(response);
+            res.status(200).json(response.data);
+        })
+        .catch(function(error) {
+            console.log(error);
+
+            const error_res = { code: ERROR_MSG.ERRORS.SERVICE_NO_RUNNING, message: error.message };
+            res.status(400).json(error_res);
         });
-        const updatedArticleInfo = await db.collection('articles').findOne({ name: articleName });
 
-        res.status(200).json(updatedArticleInfo);
-    }, res);
-});
-
-app.post('/api/articles/:name/add-comment', (req, res) => {
-    const { username, text } = req.body;
-    const articleName = req.params.name;
-
-    withDB(async(db) => {
-        const articleInfo = await db.collection('articles').findOne({ name: articleName });
-        await db.collection('articles').updateOne({ name: articleName }, {
-            '$set': {
-                comments: articleInfo.comments.concat({ username, text }),
-            },
-        });
-        const updatedArticleInfo = await db.collection('articles').findOne({ name: articleName });
-
-        res.status(200).json(updatedArticleInfo);
-    }, res);
 });
 
 app.get('*', (req, res) => {

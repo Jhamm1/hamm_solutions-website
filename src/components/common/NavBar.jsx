@@ -191,13 +191,13 @@ class NavBar extends Component {
                                 ) : (
                                     //Contact or Other Page Navbar Start
                                     <React.Fragment>
-                                        <NavLink
+                                        {/* <NavLink
                                             className="nav-link"
                                             to="/"
                                             activeClassName=""
                                         >
                                             Features
-                                        </NavLink>
+                                        </NavLink> */}
                                         <NavLink
                                             className="nav-link"
                                             to="/"
@@ -217,15 +217,16 @@ class NavBar extends Component {
                                             to="/"
                                             activeClassName=""
                                         >
-                                            Team
+                                            Director
+                                        {/* Team  */}
                                         </NavLink>
-                                        <NavLink
+                                        {/* <NavLink
                                             className="nav-link"
                                             to="/"
                                             activeClassName=""
                                         >
                                             FAQ
-                                        </NavLink>
+                                        </NavLink> */}
                                         {/* <NavLink
                                             className="nav-link"
                                             to="/"

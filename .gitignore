@@ -2,11 +2,17 @@
 
 # dependencies
 /node_modules
+API_Gateway/node_modules
 /.pnp
 .pnp.js
 .vscode
 package-lock.json
+API_Gateway/package-lock.json
 .metals
+
+# env files
+API_Gateway/.env
+
 
 # testing
 /coverage

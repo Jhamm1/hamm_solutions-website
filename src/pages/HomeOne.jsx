@@ -51,8 +51,8 @@ class HomeOne extends Component {
                 <Faq /> */}
                 {/* Pricing: src/components/versionOne/Pricing */}
                 {/* <Pricing /> */}
-                {/* Partners: src/components/common/Partners */}
-                <Partners />
+                {/* Partners: src/components/common/Partners
+                <Partners /> */}
                 {/* Subscribe: src/components/common/Subscribe */}
                 <Subscribe />
                 {/* Footer: src/components/common/Footer */}

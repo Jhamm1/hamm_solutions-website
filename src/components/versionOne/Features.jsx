@@ -44,10 +44,10 @@ Features.propTypes = {
 };
 
 Features.defaultProps = {
-    sectionName: "Features",
-    sectionTitle: "Our Amazing Features",
+    sectionName: "Services",
+    sectionTitle: "Our services",
     sectionDescription:
-        "The products that we offer at Hamm solutions provide our customers with a number of features.",
+        "The services that we offer at Hamm solutions provide our clients.",
 
     featuresData: [
         {
