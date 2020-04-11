@@ -25,7 +25,7 @@ const withDB = async(operations, res) => {
 }
 
 
-app.get('/api/contact', async(req, res) => {
+app.post('/api/contact', async(req, res) => {
     // var testBody = { "service": "test" };
     // res.status(200).json(testBody);
 
