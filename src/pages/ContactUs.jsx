@@ -22,11 +22,7 @@ class ContactUS extends Component {
             email: "",
             number: "",
             subject: "",
-            message: "",
-            successMsg: ""
-            
-            // "name": "Julian",
-            // "job": "Hamm solutions"
+            message: ""
         };
     }
 
