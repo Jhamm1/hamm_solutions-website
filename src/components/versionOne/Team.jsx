@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import OwlCarousel from "react-owl-carousel3";
 import PropTypes from "prop-types";
 
+import logo from '../../assets/img/jhamm.png';
+
 class Team extends Component {
     render() {
         //Team loop start
@@ -40,6 +42,7 @@ class Team extends Component {
                         <h3 className="title">{team.name}</h3>
                         <span className="post">{team.designation}</span>
                     </div>
+                    
                 </div>
             </div>
         ));
@@ -53,7 +56,7 @@ class Team extends Component {
                             <h3>{this.props.sectionTitle}</h3>
                             <p>{this.props.sectionDescription}</p>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                             <OwlCarousel
                                 className="owl-theme team-slides"
                                 loop={true}
@@ -80,10 +83,23 @@ class Team extends Component {
                                     }
                                 }}
                             >
-                                {/* {teamData} */}
-                                **********
-                                <img src="smiley.gif" />
+                                
+          
                             </OwlCarousel>
+                        </div> */}
+
+                        <div className="row mt-100">
+                            <div className="col-lg-6 col-md-6">
+                                <div className="logo">
+                                    <img src={logo} width="500" height="500" />
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                                <div className="about-text mb-0">
+                                <h3>Dr Julian Hamm</h3>
+                                <p>Description part</p>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -104,8 +120,8 @@ Team.propTypes = {
 Team.defaultProps = {
     sectionName: "Company Director",
     sectionTitle: "Our Team Members",
-    sectionDescription:
-        "Meet the crew.",
+    // sectionDescription:
+    //     "Meet the crew.",
 
     teamsData: [
         // {
