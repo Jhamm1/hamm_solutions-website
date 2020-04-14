@@ -4,6 +4,8 @@ import { MongoClient } from 'mongodb';
 import path from 'path';
 import axios from 'axios';
 
+require('dotenv').config();
+
 const ERROR_MSG = require("./constants/errors");
 
 const app = express();
@@ -24,10 +26,8 @@ const withDB = async(operations, res) => {
     }
 }
 
-
-app.post('/api/contact', async(req, res) => {
-    // var testBody = { "service": "test" };
-    // res.status(200).json(testBody);
+// Contact us endpoint
+app.post(process.env.CONTACT_US, async(req, res) => {
 
     console.log("****************************");
     console.log(req.body);
@@ -69,8 +69,42 @@ app.post('/api/outboundcommunication', (req, res) => {
 
 });
 
+// subscription endpoint for Hamm solution updates
+app.post('/api/subscription-updates', (req, res) => {
+
+    console.log(req.body);
+
+    const resbody = { email: req.body.email };
+
+    res.status(200).json(resbody);
+
+});
+
+//TODO: Schedule consultations
+
+
+//TODO: Content for the blog
+
+
+
+
+//TODO: Content for the portfolio
+
+
+
+//TODO: User registration
+
+
+
+
+//TODO: Login 
+
+
+
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'));
+    res.sendFile(path.join(__dirname + '/.well-known/pki-validation/starfield.html'));
 });
 
 app.listen(8000, () => console.log('Listening on port 8000'));

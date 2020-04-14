@@ -1,23 +1,68 @@
 import React, { Component } from "react";
+import axios from "axios";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { ValidationForm, TextInput } from "react-bootstrap4-form-validation";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+
 const CustomForm = ({ status, message, onValidated }) => {
     let email;
-    const submit = () =>
-        email &&
-        email.value.indexOf("@") > -1 &&
-        onValidated({
-            EMAIL: email.value
-        });
+    // const submit = () =>
+    //     email &&
+    //     email.value.indexOf("@") > -1 &&
+    //     onValidated({
+    //         EMAIL: email.value
+    //     });
+    
+    
+    function reqpayload (email){
+
+        const payload = {email: email};
+
+        return payload;
+    }
+       const submitEmail = e => {
+            // axios
+            //     .post("/api/subscription-updates", this.state, {
+            //         headers: { Accept: "application/json",
+            //         "Access-Control-Allow-Origin": "*",
+            //         "Access-Control-Allow-Headers": "Content-Type",
+            //         "Access-Control-Allow-Headers": "Origin" }
+            //     })
+            //     .then(function(response) {
+            //         document.getElementById("contactForm").reset();
+            //         that.setState({
+            //             successMsg: "We received your submission"
+            //         });
+            //         document.getElementById("contactForm").reset();
+            //         console.log(response);
+            //     })
+            //     .catch(function(error) {});
+            email &&
+            email.value.indexOf("@") > -1 &&
+            onValidated({
+                EMAIL: email.value
+            });
+            
+            // console.log(email.value);
+            console.log(reqpayload(email.value));
+
+            document.getElementById("myForm").reset(); 
+        };
+
     return (
         <div className="subscribe-form">
+            <form id="myForm">
             <input
                 ref={node => (email = node)}
                 type="email"
+                id="controlF"
                 placeholder="Your Email Address"
                 className="form-control"
                 required
             />
-            <button className="btn btn-primary" onClick={submit}>
+            </form>
+            <button className="btn btn-primary" onClick={submitEmail}>
                 Submit
             </button>
             {status === "sending" && (

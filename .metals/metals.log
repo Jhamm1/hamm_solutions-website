@@ -24,3 +24,17 @@ INFO: Unsupported notification method: $/setTraceNotification
 INFO  started: Metals version 0.8.4 in workspace '/Users/jhamm/Downloads/Repos/hamm_solutions-website'
 INFO  time: initialize in 1.49s
 WARN  no build tool detected in workspace '/Users/jhamm/Downloads/Repos/hamm_solutions-website'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Apr 13, 2020 11:14:36 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 13, 2020 11:14:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 13, 2020 2:44:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 14, 2020 5:00:18 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 14, 2020 5:00:19 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 14, 2020 10:37:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 14, 2020 10:37:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification

@@ -93,7 +93,7 @@ Showcase.propTypes = {
 
 //Default Props
 Showcase.defaultProps = {
-    showcasenName: "Make your business more profitable",
+    showcasenName: "Hamm solutions is a product-focused technology consultancy",
     showcaseDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
     showcaseImage: require("../../assets/img/main-banner.png"),
