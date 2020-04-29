@@ -10,21 +10,23 @@ const ERROR_MSG = require("./constants/errors");
 
 const app = express();
 
+app.set('port', process.env.PORT || 8000);
+
 app.use(express.static(path.join(__dirname, '/build')));
 app.use(bodyParser.json());
 
-const withDB = async(operations, res) => {
-    try {
-        const client = await MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true });
-        const db = client.db('my-blog');
+// const withDB = async(operations, res) => {
+//     try {
+//         const client = await MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true });
+//         const db = client.db('my-blog');
 
-        await operations(db);
+//         await operations(db);
 
-        client.close();
-    } catch (error) {
-        res.status(500).json({ message: 'Error connecting to db', error });
-    }
-}
+//         client.close();
+//     } catch (error) {
+//         res.status(500).json({ message: 'Error connecting to db', error });
+//     }
+// }
 
 // Contact us endpoint
 app.post(process.env.CONTACT_US, async(req, res) => {
@@ -107,4 +109,10 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/.well-known/pki-validation/starfield.html'));
 });
 
-app.listen(8000, () => console.log('Listening on port 8000'));
+/**
+ * Start Express server.
+ */
+app.listen(app.get('port'), () => {
+    console.log('Listening on port ', app.get('port'));
+    console.log('Press CTRL-C to stop\n');
+});

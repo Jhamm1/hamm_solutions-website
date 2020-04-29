@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/common/NavBar";
 import GoogleMap from "../components/common/GoogleMap";
 import Footer from "../components/common/Footer";
-//import { withGoogleMap} from 'react-google-maps';
+import { withGoogleMap} from 'react-google-maps';
 
 class ContactUS extends Component {
     componentDidMount() {
@@ -162,7 +162,7 @@ class ContactUS extends Component {
                                 <div className="col-lg-12 col-md-12">
                                     <div id="map">
                                         {/* GoogleMap: src/components/common/GoogleMap */}
-                                 
+                                    
                                         
                                     </div>
                                 </div>
@@ -346,7 +346,7 @@ ContactUS.defaultProps = {
     contactDescriptionsOne:
         "Contact us using the details below or fill in this form and a member of our team will be in touch soon. We also would welcome to discuss new opportunities with you.",
     contactDescriptionsTwo:
-        "***************"
+        ""
 };
 
 export default ContactUS;

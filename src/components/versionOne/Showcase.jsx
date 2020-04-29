@@ -96,7 +96,7 @@ Showcase.defaultProps = {
     showcasenName: "Hamm solutions is a product-focused technology consultancy",
     showcaseDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-    showcaseImage: require("../../assets/img/main-banner.png"),
+    showcaseImage: require("../../assets/img/main.jpg"),
     showcaseBtnOneLink: "#about",
     showcaseBtnOneText: "Get Started",
     showcaseBtnTwoLink: "//www.youtube.com/watch?v=vr0qNXmkUJ8",
