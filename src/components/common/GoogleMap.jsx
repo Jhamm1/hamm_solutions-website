@@ -15,5 +15,5 @@ class GoogleMap extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: "AIzaSyAip7BQjHGoOFtmHvxskfjx7I6Pt51JR5U"
+    apiKey: ""
 })(GoogleMap);
