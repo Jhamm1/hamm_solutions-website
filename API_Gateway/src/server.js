@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 // }
 
 // Contact us endpoint
-app.post(process.env.CONTACT_US, async(req, res) => {
+app.post('/api/contact', async(req, res) => {
 
     console.log("****************************");
     console.log(req.body);
