@@ -36,7 +36,7 @@ class HomeOne extends Component {
                 {/* Services: src/components/versionOne/Services */}
                 {/* <Services /> */}
                 {/* Vision: src/components/common/Vision */}
-                <Vision />
+                {/* <Vision /> */}
                 {/* FunFactCOunter: src/components/versionOne/FunFactCounter */}
                 <FunFactCOunter />
                 {/* JointClient: src/components/common/JoinClient */}

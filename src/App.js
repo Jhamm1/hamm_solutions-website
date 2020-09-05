@@ -13,8 +13,6 @@ import "./assets/scss/responsive.scss";
 
 //Component Import
 import HomeOne from "./pages/HomeOne";
-import HomeTwo from "./pages/HomeTwo";
-import HomeThree from "./pages/Home.Three";
 import ContactUS from "./pages/ContactUs";
 import ScrollUpBtn from "./components/common/ScrollUpBtn";
 
@@ -40,14 +38,14 @@ class App extends Component {
                                                     path="/contact"
                                                     component={ContactUS}
                                                 />
-                                                <Route
+                                                {/* <Route
                                                     path="/home-three"
                                                     component={HomeThree}
                                                 />
                                                 <Route
                                                     path="/home-two"
                                                     component={HomeTwo}
-                                                />
+                                                /> */}
                                                 <Route
                                                     path="/"
                                                     exact

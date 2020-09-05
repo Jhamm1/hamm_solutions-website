@@ -93,10 +93,10 @@ class NavBar extends Component {
                                     <Dropdown.Menu className="super-colors">
                                         <LinkContainer exact to="/">
                                             <NavDropdown.Item>
-                                                Home Version One
+                                                Another page
                                             </NavDropdown.Item>
                                         </LinkContainer>
-                                        <LinkContainer to="/home-two">
+                                        {/* <LinkContainer to="/home-two">
                                             <NavDropdown.Item>
                                                 Home Version Two
                                             </NavDropdown.Item>
@@ -105,7 +105,7 @@ class NavBar extends Component {
                                             <NavDropdown.Item>
                                                 Home Version Three
                                             </NavDropdown.Item>
-                                        </LinkContainer>
+                                        </LinkContainer> */}
                                     </Dropdown.Menu>
                                 </Dropdown>
 
