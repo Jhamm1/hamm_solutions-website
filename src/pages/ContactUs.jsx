@@ -4,7 +4,6 @@ import Subscribe from "../components/common/Subscribe";
 import { ValidationForm, TextInput } from "react-bootstrap4-form-validation";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
 import NavBar from "../components/common/NavBar";
 import GoogleMap from "../components/common/GoogleMap";
 import Footer from "../components/common/Footer";
