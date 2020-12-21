@@ -61,6 +61,17 @@ app.post('/api/outboundcommunication', (req, res) => {
         // axios.post('http://localhost:3300/nn', req.body)
         .then(function(response) {
             console.log(response);
+            const sandwich = tracer.trace('sandwich.make', () => {
+                const ingredients = tracer.trace('get_ingredients', () => {
+                  return getIngredients()
+                })
+            
+                return tracer.trace('assemble_sandwich', () => {
+                  assembleSandwich(ingredients)
+                })
+              })
+            
+              res.end(sandwich)
             res.status(200).json(response.data);
         })
         .catch(function(error) {
@@ -79,6 +90,7 @@ app.post('/api/subscription-updates', (req, res) => {
 
     const resbody = { email: req.body.email };
 
+    tracer
     res.status(200).json(resbody);
 
 });
