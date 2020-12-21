@@ -6,6 +6,7 @@ import axios from 'axios';
 
 require('dotenv').config();
 
+const tracer = require('dd-trace').init();
 const ERROR_MSG = require("./constants/errors");
 
 const app = express();
